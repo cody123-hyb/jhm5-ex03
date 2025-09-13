@@ -19,19 +19,6 @@ describe('Hello World worker', () => {
 
 	it('responds with Hello World! (integration style)', async () => {
 		const response = await SELF.fetch('https://example.com');
-        expect(await response.text()).toMatchInlineSnapshot(`
-            "<!DOCTYPE html>
-<html lang=\\"zh-CN\\">
-<head>
-    <meta charset=\\"UTF-8\\">
-    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">
-    <title>彩虹過三關</title>
-    <!-- ... rest of HTML omitted for brevity ... -->
-</head>
-<body>
-    <!-- ... rest of HTML omitted for brevity ... -->
-</body>
-</html>"
-        `);
+		expect(await response.text()).toMatchInlineSnapshot(`"Hello World!"`);
 	});
 });
