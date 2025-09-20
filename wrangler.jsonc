@@ -2,7 +2,9 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "jhm5-ex03",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-09-13",
+	"compatibility_date": "2025-09-20",
+
+	
 	"assets":{
 		"directory": "./public/",
         "binding":"assets"
