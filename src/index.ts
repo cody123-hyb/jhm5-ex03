@@ -13,6 +13,6 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response("https://symmetrical-potato-97jv6gwjg74427r5j-8787.app.github.dev/");
+		return new Response('Hello World');
 	},
 } satisfies ExportedHandler<Env>;
